@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="./home.js" defer></script>
+    <script src="./contact.js" defer></script>
+    <title>Contact Page</title>
+</head>
+<body>
+    <nav class="mb-2">
+        <h2><a class="logo" href="home.html"><h2></h2>GUPC</a></h2>
+        <ul class="computer-nav">
+            <li><a href="home.html" class="border-btn">Home</a></li>
+            <li><a class="border-btn" href="./event.html">Event</a></li>
+        </ul>
+        <div class="menu-icon">&#9776;<span>Menu</span></div>
+        <ul class="mobile-nav">
+            <li><a href="home.html" class="nav-link"><i class="arrow right"></i>Home</a></li>
+            <li><a href="./event.html"><i class="arrow right"></i>Event</a></li>
+        </ul>
+    </nav>
+
+    <header id="header">
+        <img src="images\Contact-header.png" alt="">
+        <div class="background">
+            <div>
+                <h1>CONTACT</h1>
+                <p>Keep in touch with Gannon University Programming Club.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1" data-bs-toggle="collapse" data-bs-target="#clubApplication" aria-expanded="false" aria-controls="clubApplication">Club Member Application</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2" data-bs-toggle="collapse" data-bs-target="#eventApplication" aria-expanded="false" aria-controls="eventApplication">Event Application</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3" data-bs-toggle="collapse" data-bs-target="#otherMessage" aria-expanded="false" aria-controls="otherMessage">Other Message</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio4" data-bs-toggle="collapse" data-bs-target="#donate" aria-expanded="false" aria-controls="donate">Donate Us</label>
+        </div>
+
+        <div class="collapse" id="clubApplication">
+            <div class="card card-body">
+                <button type="button" class="btn-close" data-bs-toggle="collapse" href="#clubApplication" role="button" aria-expanded="false" aria-controls="clubApplication" aria-label="Close"></button>
+                <h3>Club Application Form</h3>
+                <form action="" method="get">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label">First Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="firstName" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Last Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address <span>*</span></label>
+                        <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number <span>*</span></label>
+                        <input type="tel" required class="form-control" id="phone" placeholder="(012)-345-6789">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Are you from Gannon University?></label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="fromGannon" id="yes" value="yes">
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="fromGannon" id="no" value="no">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Your Level?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level" id="undergraduate" value="undergraduate">
+                            <label class="form-check-label" for="undergraduate">Undergraduate</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level" id="graduate" value="graduate">
+                            <label class="form-check-label" for="graduate">Graduate</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level" id="other" value="other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="media" class="form-label">How you hear about us? </label>
+                        <select class="form-select" id="media" name="media" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="website">GUPC Website</option>
+                            <option value="social media">Social Media</option>
+                            <option value="club member">Club Member</option>
+                            <option value="gannon faculty">Gannon Faculty</option>
+                          </select>
+                    </div>
+
+                    <div class="btn-container mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="collapse" id="eventApplication">
+            <div class="card card-body">
+                <button type="button" class="btn-close" data-bs-toggle="collapse" href="#eventApplication" role="button" aria-expanded="false" aria-controls="eventApplication" aria-label="Close"></button>
+                <h3>Event Application Form</h3>
+                <form action="" method="get">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label">First Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="firstName" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Last Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address <span>*</span></label>
+                        <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number <span>*</span></label>
+                        <input type="tel" required class="form-control" id="phone" placeholder="(012)-345-6789">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Are you a member of GUPC?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="memberGUPC" id="yes" value="yes">
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="memberGUPC" id="no" value="no">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Your Level?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level" id="undergraduate" value="undergraduate">
+                            <label class="form-check-label" for="undergraduate">Undergraduate</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level" id="graduate" value="graduate">
+                            <label class="form-check-label" for="graduate">Graduate</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="level" id="other" value="other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p><label for="media" class="form-label">Please check the event you want to register: </label></p>
+                        <div class="row">
+                            <div class="col">
+                                <label for="media" class="form-label" style="font-weight: bold;">Weekly events: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="cyberMonday" value="yes" id="cyberMonday">
+                                    <label class="form-check-label" for="cyberMonday">
+                                        Cyber Monday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="ITuesday" value="yes" id="ITuesday">
+                                    <label class="form-check-label" for="ITuesday">
+                                        ITuesday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="webWednesday" value="yes" id="webWednesday">
+                                    <label class="form-check-label" for="webWednesday">
+                                        Web Wednesday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="gameThursday" value="yes" id="gameThursday">
+                                    <label class="form-check-label" for="gameThursday">
+                                        Game Thursday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="AIFriday" value="yes" id="AIFriday">
+                                    <label class="form-check-label" for="AIFriday">
+                                        AIFriday
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="media" class="form-label" style="font-weight: bold;">Monthly events: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="superSunday" value="yes" id="superSunday">
+                                    <label class="form-check-label" for="superSunday">
+                                        Super Sunday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="ITuesday" value="yes" id="cyberMonday">
+                                    <label class="form-check-label" for="cyberMonday">
+                                        Reactive Robotics
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="webWednesday" value="yes" id="cyberMonday">
+                                    <label class="form-check-label" for="cyberMonday">
+                                        Team Meeting
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label for="media" class="form-label" style="font-weight: bold;">Special events: </label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="cyberMonday" value="yes" id="cyberMonday">
+                                    <label class="form-check-label" for="cyberMonday">
+                                        Title Tuesday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="ITuesday" value="yes" id="cyberMonday">
+                                    <label class="form-check-label" for="cyberMonday">
+                                        Threatening Thursday
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="webWednesday" value="yes" id="cyberMonday">
+                                    <label class="form-check-label" for="cyberMonday">
+                                        Career Orientation
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="media" class="form-label">How you hear about our event? </label>
+                        <select class="form-select" id="media" name="media" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="website">GUPC Website</option>
+                            <option value="social media">Social Media</option>
+                            <option value="club member">Club Member</option>
+                            <option value="gannon faculty">Gannon Faculty</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Additional Comments: </label>
+                        <textarea class="form-control" id="comments" rows="3"></textarea>
+                    </div>
+
+                    <div class="btn-container mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="collapse" id="otherMessage">
+            <div class="card card-body">
+                <button type="button" class="btn-close" data-bs-toggle="collapse" href="#otherMessage" role="button" aria-expanded="false" aria-controls="otherMessage" aria-label="Close"></button>
+                <h3>Other Message Form</h3>
+                <form action="" method="get">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label">First Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="firstName" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Last Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address <span>*</span></label>
+                        <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number <span>*</span></label>
+                        <input type="tel" required class="form-control" id="phone" placeholder="(012)-345-6789">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Are you a member of GUPC?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="memberGUPC" id="yes" value="yes">
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="memberGUPC" id="no" value="no">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reply" class="form-label">Preference Reply: </label>
+                        <select class="form-select" id="reply" name="reply" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="questions" class="form-label">Questions or Messages: </label>
+                        <textarea class="form-control" name="questions" id="questions" rows="4"></textarea>
+                    </div>
+
+                    <div class="btn-container mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="collapse" id="donate">
+            <div class="card card-body">
+                <button type="button" class="btn-close" data-bs-toggle="collapse" href="#donate" role="button" aria-expanded="false" aria-controls="donate" aria-label="Close"></button>
+                <h3>Donate Form</h3>
+                <form action="" method="get">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label">First Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="firstName" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Last Name <span>*</span></label>
+                            <input type="text" required class="form-control" id="lastName" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address <span>*</span></label>
+                        <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number <span>*</span></label>
+                        <input type="tel" required class="form-control" id="phone" placeholder="(012)-345-6789">
+                    </div>
+                    <div class="mb-3">
+                        <label for="reply" class="form-label">Preference Reply: </label>
+                        <select class="form-select" id="reply" name="reply" aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                          </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Are you a member of GUPC?</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="memberGUPC" id="yes" value="yes">
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="memberGUPC" id="no" value="no">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <label class="form-label" style="margin-right: 2%;">Amount you want to donate: </label>
+                        <span class="input-group-text">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">.00</span>
+                      </div>
+                    <div class="mb-3">
+                        <p><label class="form-label">Payment Type: </label></p>
+                        <input type="radio" class="btn-check" name="card-type" value="visa" id="visa" autocomplete="off">
+                        <label class="btn bank-card" for="visa"><img src="images\visa.png" alt="Visa" title="Visa"></label>
+                        <input type="radio" class="btn-check" name="card-type" value="mastercard" id="mastercard" autocomplete="off">
+                        <label class="btn bank-card" for="mastercard"><img src="images\mastercard.png" alt="Master Card" title="Master Card"></label>
+                        <input type="radio" class="btn-check" name="card-type" value="JCB" id="JCB" autocomplete="off">
+                        <label class="btn bank-card" for="JCB"><img src="images\jcb.jpg" alt="JCB" title="JCB"></label>
+                        <input type="radio" class="btn-check" name="card-type" value="discover" id="discover" autocomplete="off">
+                        <label class="btn bank-card" for="discover"><img src="images\discover.png" alt="Discover" title="Discover"></label>
+                        <input type="radio" class="btn-check" name="card-type" value="americanExpress" id="americanExpress" autocomplete="off">
+                        <label class="btn bank-card" for="americanExpress"><img src="images\american-express.png" alt="Amerrican Express" title="American Express"></label>
+                    </div>
+
+                    <label class="form-label" style="font-weight: bold;">Card Info: </label>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="nameOnCard" id="nameOnCard" placeholder="Name">
+                        <label for="nameOnCard">Name on Card</label>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <p><label class="form-label" for="exp">Exp Date: </label></p>
+                            <input type="month" id="exp" name="exp" min="2024-01" />
+                        </div>
+                        <div class="col">
+                            <label class="form-label">CVV: </label>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" name="cvv" id="cvv" placeholder="CVV">
+                                <label for="cvv">CVV</label>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" name="comments" id="comments" style="height: 100px"></textarea>
+                        <label for="comments">Comments</label>
+                      </div>
+
+                    <div class="btn-container mb-3">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1><span id="span-1">OTHER</span><span id="span-2">CONTACT</span></h1>
+        <h4><span>Contact</span> us through email or text:</h4>
+        <div id="email-text">
+            <a href="mailto:programmingclub@gannon.edu"><i class="bi bi-envelope-fill"></i>   programmingclub@gannon.edu</a>
+            <a href="tel:(814)-999-9999"><i class="bi bi-telephone-outbound-fill"></i>   (814)-999-9999</a>
+        </div>
+        <ul class="footer-link">
+            <li><a href="./home.html" class="orange-button">Home</a></li>
+            <li id="back"><a href="#header" class="black-button">Back to top</a></li>
+            <li><a href="./event.html" class="orange-button">Event</a></li>
+        </ul>
+        <p class="small"><a href="#header" class="black-button">Back to top</a></p>
+        <p class="bottom-text">@Made by Quang Phu Ly</p>
+    </footer>
+</body>
+</html>

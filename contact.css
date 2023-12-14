@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Dosis:wght@400;700&family=Edu+TAS+Beginner&family=Indie+Flower&family=Montserrat:ital,wght@0,200;0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    box-sizing: content-box;
+    
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Navigation */
+nav {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    font-family: 'Anonymous Pro', monospace;
+    color: #2F0840;
+    position: fixed;
+    background-color: #fafafa;
+    width: 100%;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 99;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav h2{
+    width: 300px;
+    font-size: 2.18rem;
+    letter-spacing: 5px;
+    font-family: 'Edu TAS Beginner', cursive;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+nav li {
+    margin: 0 20px 0 30px;
+    font-size: 16px;
+}
+
+nav a {
+    color: #2F0840;
+    transition: color 0.4s;
+    text-decoration: none;
+}
+
+nav a:hover, .nav-link:hover{
+    color: #F26938;
+    font-size: larger;
+}
+
+.logo {
+    color: black;
+}
+/* contact button */
+.border-btn {
+    color: #2F0840;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 2px solid #F26938;
+    border-radius: 10px;
+    transition: color 0.3s background-color 0.3s, border 0.3s;
+}
+
+.border-btn:hover {
+    color: #F26938;
+    font-size: larger;
+}
+
+.menu-icon {
+    display:none;
+    cursor: pointer;
+    padding-right: 15px;
+    font-size: 1.3rem; 
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    background-color: #fafafa;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobile-nav li {
+    margin: 10px 10px;
+}
+
+/*Hide mobile nav on larger screens*/
+@media only screen and (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    nav h2 {
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 369px) { 
+    nav h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.arrow {
+    border: solid #F26938;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 10px;
+}
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+/*Header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 16/4;
+    overflow: hidden;
+}
+
+header img {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16/4;
+    object-fit: cover;
+    z-index: -1;
+    filter:brightness(90%);
+}
+
+header .background {
+    width: 100%;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    z-index: 10;
+    margin-top: 4rem;
+    background-image: linear-gradient(to right, black,rgba(0, 0, 0, 0.3));
+}
+
+.background div {
+    color: white;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3%;
+    padding-left: 5%;
+}
+
+.background div h1 {
+    padding-bottom: 2%;
+    line-height: 150%;
+    font-size: 5.2rem;
+    font-weight: bold;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.background div p {
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1299px) { 
+    .background div h1 {
+        font-size: 4.4rem;
+    }
+    
+    .background div p {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) { 
+    .background div h1 {
+        font-size: 4.3rem;
+    }
+    
+    .background div p {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+    .background div h1 {
+        font-size: 3.9rem;
+    }
+    
+    .background div p {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) { 
+    .background div h1 {
+        font-size: 3.3rem;
+    }
+    
+    .background div p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) { 
+    .background div h1 {
+        font-size: 2.9rem;
+    }
+    
+    .background div p {
+        display: none;
+    }
+}
+
+/*Header*/
+header {
+    width: 100%;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn-group .btn {
+    border: 2px solid #F26938;
+    color: black;
+    border-radius: 0;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group .btn:hover {
+    background-color: #fdb89f;
+    color: black;
+    /* font-weight: bold; */
+    border: 3px solid #F26938;
+}
+.btn-outline-primary {
+    --bs-btn-color: #F26938;
+    --bs-btn-border-color: #F26938;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #fdb89f;
+    --bs-btn-hover-border-color: #F26938;
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: black;
+    --bs-btn-active-bg: #F26938;
+    --bs-btn-active-border-color: #F26938;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #F26938;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #F26938;
+    --bs-gradient: none;
+}
+
+/*Main*/
+main {
+    width: 100%;
+}
+
+.card-body h3 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline #F26938;
+    text-underline-offset: 3px;
+    padding-bottom: 2%;
+}
+
+label span {
+    color: red;
+}
+
+.bank-card img {
+    width: 36.5px;
+    aspect-ratio: 36.5/27;
+    object-fit: cover;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #F26938;
+    border-color: #F26938;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-primary:hover {
+    color: #F26938;
+    background-color: white;
+    font-size: larger;
+    font-weight: bold;
+    border-color: #F26938;
+}
+
+/*Footer*/
+/*Footer*/
+footer {
+    width: 100%;
+    padding: 3% 0;
+}
+
+footer h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+#span-1 {
+    background-color: #F26938;
+    padding: 3px 15px;
+    text-align: center;
+}
+
+#span-2 {
+    color: white;
+    background-color: black;
+    padding: 3px 15px;
+    text-align: center;
+}
+
+footer h4 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+footer h4 span {
+    color: #F26938;
+    font-size: larger;
+}
+
+#email-text {
+    width: 100%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    color: black;
+    text-decoration: underline 2px #F26938;
+}
+
+footer a i {
+    color: #F26938;
+    font-size: larger;
+}
+
+.footer-link {
+    text-align: center;
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.orange-button {
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid #F26938;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: #F26938;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.orange-button:hover {
+    color:white;
+    background-color: black;
+    border: 2px solid black;
+    transition: 0.5s ease-out;
+    font-size: 1.5rem;
+}
+
+.black-button {
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    background-color: black;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+.black-button:hover {
+    color:#F26938;
+    background-color: white;
+    border: 2px solid #F26938;
+    transition: 0.5s ease-out;
+    font-size: 1.5rem;
+}
+
+.bottom-text {
+    text-align: center;
+    font-size: smaller;
+    color: grey;
+    /* padding-bottom: 10px; */
+}
+
+@media only screen and (min-width: 1550px) { 
+    
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1549px) { 
+    
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1299px) { 
+    form {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) { 
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+    
+}
+
+@media only screen and (min-width: 601px) { 
+    .small {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) { 
+    footer h4 {
+        font-size: 1.2rem;
+    }
+    .footer-link {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    footer h4 {
+        font-size: 1rem;
+    }
+    .footer-link {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .footer-link #back {
+        display: none;
+    }
+    footer h5 span {
+        padding: 2px;
+    }
+    .small {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    #email-text {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
